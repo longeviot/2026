@@ -1,0 +1,708 @@
+
+:root {
+    --primary-color: #194D33;
+    --secondary-color: #88BDA5;
+    --contrast-color: white;
+    --link-color: var(--primary-color);
+    --link-hover-color: #B46B3B;
+    --odd-bg-color: #E8E8E8;
+    --even-bg-color: white;
+}  
+
+body {
+    font-family: 'Verdana', sans-serif;
+    font-size: 19px;
+    line-height: 1.7em;
+    color: black;
+    font-weight: 100;
+    background: #ffffff;
+}
+
+/* --------------------------------------
+ * Global Typography
+ *------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+b {
+    font-weight: bold !important;
+}
+
+ol {
+    padding-left: 40px !important;
+}
+
+/* --------------------------------------
+ * LINK STYLE
+ *------------------------------------------*/
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: var(--link-hover-color);
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+p.lead {
+    font-size: 19px;
+    line-height: 1.7em;
+}
+
+p.text-block {
+    text-align: justify;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+}
+
+#main-wrapper {
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.navbar-brand,
+.navbar-brand:focus {
+    padding-top: 10px;
+    font-size: 2em;
+    font-weight: 1000;
+    margin: 2px 25px 2px 0 !important;
+    color: var(--primary-color);
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+    color: var(--link-hover-color);
+}
+
+.navbar {
+    border-radius: 0;
+    background: var(--secondary-color);
+    margin: 0;
+}
+
+.main-menu .navbar-right {
+    margin-right: -15px;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-collapse {
+    border: none;
+    border-radius: 0;
+}
+
+.nav-link {
+    color: var(--contrast-color);
+    font-weight: 600;
+    padding: 15px 0 15px 30px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: var(--link-hover-color) !important;
+    background: transparent;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-bars {
+    color: var(--contrast-color);
+    font-size: 1.5em;
+}
+
+.dropdown-menu {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-item {
+    color: var(--contrast-color);
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.header {
+     height: 50vh;
+     min-height: 500px;
+     color: #ffffff;
+     background: url('../img/newcastle_skyline.jpg') no-repeat center center;
+     background-size: cover;
+     background-color: #E8E8E8;
+     background-position: 20% 20%;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.header h1 {
+    color: var(--secondary-color);
+    font-weight: 1000;
+    font-size: 4em;
+}
+
+.header p.lead {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.header .co-located {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    margin-top: -20px;
+}
+
+.header .quote {
+    font-size: 24px !important;
+    margin-top: 5vh;
+}
+
+.header a {
+    color: var(--secondary-color);
+}
+
+.header-content {
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    max-width: 1000px;      /* set your desired max width */
+    margin: 0 auto;        /* center horizontally */
+    padding: 2em 2em;  
+    max-height: 500px; 
+    
+}
+
+
+@media (max-width : 600px) {
+    .header {
+        min-height: 300px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p.lead {
+        font-size: 22px;
+    }
+
+    .header .quote {
+        display: none;
+    }
+}
+
+#main-wrapper > section:nth-child(odd) {
+    background-color: var(--odd-bg-color);
+}
+
+#main-wrapper > section:nth-child(even) {
+    background-color: var(--even-bg-color);
+    border-top: 1px solid var(--even-bg-color);
+    border-bottom: 1px solid var(--even-bg-color);
+}
+
+.section-wrapper {
+    padding: 100px 10px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-title h1 {
+    margin-bottom: 5px;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #888888;
+}
+
+.about-event .lead {
+    font-size: 19px;
+    line-height: 1.7em;
+}
+
+.about-event address {
+    font-size: 15px;
+    color: #888888;
+    line-height: 1.8em;
+}
+
+.about-event address strong {
+    color: var(--accent-really-dark-color);
+}
+
+.team .thumbnail {
+    padding: 0;
+    line-height: 22px;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 30px;
+}
+
+@media (max-width : 767px) {
+    .team .thumbnail {
+        margin-bottom: 30px;
+    }
+}
+
+.team .thumbnail img {
+    width: 100%;
+}
+
+.team .thumbnail .caption {
+    padding: 10px;
+}
+
+.team .thumbnail h3 {
+    font-size: 16px;
+    font-weight: bold;
+
+    margin: 0 40px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.team .thumbnail h3 small {
+    font-size: 13px;
+    color: #888;
+    display: block;
+    font-weight: normal;
+}
+
+.team .social-links li {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.team .social-links li:last-child {
+    margin-right: 0;
+}
+
+.team .social-links li a {
+    display: block;
+    font-size: 24px;
+    color: #ccc;
+    padding: 0 5px;
+}
+
+.team .social-links li a:hover {
+    color: #38A1F3;
+}
+
+.section-ajenda .session {
+    padding: 15px 0;
+    border-left: 1px solid #eeeeee;
+    margin-bottom: 40px;
+}
+
+.section-ajenda .session time {
+    padding: 5px 25px 15px;
+    border-bottom: 1px solid #eeeeee;
+    display: inline-block;
+}
+
+.section-ajenda .session h2 {
+    margin: 20px 0 0 20px;
+}
+
+.section-ajenda .session h3 {
+    margin: 20px 0 20px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.section-ajenda .session h3 span {
+    font-size: 14px;
+    display: block;
+    line-height: 1;
+}
+
+
+/* Copyright */
+
+.footer {
+    background-color: var(--secondary-color);
+}
+
+.footer .copyright-section {
+    font-size: 13px;
+    color: var(--contrast-color);
+    padding: 30px 0;
+}
+
+.footer .copyright-section .copytext {
+    font-weight: 400;
+    display: block;
+}
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+#preloader {
+    background: #ffffff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#status,
+.status-mes {
+    background-image: url(../img/preloader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}
+
+.status-mes {
+    background: none;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    top: 65%;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+hr {
+    border: none;
+    border-top: 5px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 7px;
+    /* padding-bottom: 2em; */
+    /* padding-top: 2em; */
+}
+
+hr:after {
+    background: #fff;
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+/* pubs CSS */
+
+.affil {
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/*.speaker-img {*/
+/*    width: 32%;*/
+/*}*/
+
+/* Make keynote headshot fill its column nicely */
+.speaker-img {
+    width: 100%;
+    max-width: 320px;      /* optional cap so it doesn’t get huge on desktops */
+    border-radius: 8px;    /* optional: soft corners */
+}
+
+.talk-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+}
+
+.speaker {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.speaker-bio {
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+.pubs_img {
+    border-style: solid !important;
+    border-width: 1px !important;
+    display: block;
+    width: 100%;
+    margin: 10px 20px 10px 0;
+}
+
+.paper-title {
+    vertical-align: top; 
+    padding-left: 3px; 
+    margin-top: 10px;
+}
+
+.pubs_title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.pubs_title_a {
+    text-decoration: none;
+    border: none;
+    font-size: 16pt;
+}
+
+.pubs_content {
+    font-size: 16pt;
+}
+
+.image-holder {
+    float: left;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.pub-text {
+    padding-top: 2em;
+}
+
+.abstract {
+    padding-top: 0.5em;
+    text-align: justify;
+    border: none;
+}
+
+.time {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.agenda-point {
+    font-size: 1.5em;
+    margin: 20px 0;
+    padding: 10px 0 10px 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    box-shadow: 0px -5px 0px var(--primary-color) inset;
+}
+
+.agenda-title {
+    font-size: 1em;
+}
+
+.team .thumbnail h3 small {
+    line-height: 1em;
+}
+
+.prev-editions {
+    margin: 0 auto;
+    min-width: 300px;
+    width: 50%;
+}
+
+.dates {
+    width: auto;
+    margin: 0px auto;
+}
+
+
+.dates > tbody > tr > td:first-child {
+    text-align: right;
+    vertical-align: top;
+    padding-right: 1em;
+}
+
+.dates > tbody > tr > td:last-child {
+    text-align: left;
+    padding-left: 1em;
+}
+
+.dates-md {
+    display: none;
+}
+
+.dates-md > tbody > tr > td:first-child {
+    text-align: right;
+    vertical-align: top;
+    padding-right: 1em;
+}
+
+.dates-sm {
+    display: none;
+    text-align: center;
+}
+
+.dates-sm > p {
+    margin: 0;
+}
+
+.dates-sm > .download-icon-text {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .dates {
+        display: none;
+    }
+
+    .dates-md {
+        display: table;
+    }
+
+    .dates-sm {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dates {
+        display: none;
+    }
+
+    .dates-md {
+        display: none;
+    }
+
+    .dates-sm {
+        display: inline;
+    }
+}
+
+.btn {
+    padding: 10px 30px;
+    margin-bottom: 0;
+    font-size: 16px;
+    border-radius: 0;
+    font-weight: 500;
+    border-width: 2px;
+    text-transform: uppercase;
+}
+
+.btn-lg {
+    font-size: 18px;
+    padding: 15px 30px
+}
+
+/*btn-primary*/
+.btn-primary {
+    border-color: var(--accent-color-dark);
+    background: transparent;
+    color: var(--accent-color-dark);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:focus {
+    background: var(--accent-highlight);
+    color: var(--accent-color-dark);
+    border-color: var(--accent-color-dark);
+}
+
+/*btn-default*/
+.btn-default {
+    color: #ffffff; 
+    background-color: transparent;
+    border-color: #ffffff;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active:focus {
+    background-color: transparent;
+    color: var(--accent-color-dark);
+    border-color: var(--accent-color-dark);
+}
+
+button:focus,
+.btn:focus,
+.btn:active:focus {
+    outline: none;
+}
