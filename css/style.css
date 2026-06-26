@@ -588,72 +588,24 @@ hr:after {
     width: 50%;
 }
 
-.dates {
-    width: auto;
-    margin: 0px auto;
-}
-
-
-.dates > tbody > tr > td:first-child {
+.dates-text {
     text-align: right;
-    vertical-align: top;
-    padding-right: 1em;
 }
 
-.dates > tbody > tr > td:last-child {
-    text-align: left;
-    padding-left: 1em;
-}
-
-.dates-md {
-    display: none;
-}
-
-.dates-md > tbody > tr > td:first-child {
-    text-align: right;
-    vertical-align: top;
-    padding-right: 1em;
-}
-
-.dates-sm {
-    display: none;
+.dates-cal {
     text-align: center;
 }
 
-.dates-sm > p {
-    margin: 0;
-}
-
-.dates-sm > .download-icon-text {
-    margin-bottom: 25px;
-}
-
-@media screen and (max-width: 768px) {
-    .dates {
-        display: none;
-    }
-
-    .dates-md {
-        display: table;
-    }
-
-    .dates-sm {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 576px) {
-    .dates {
-        display: none;
+    .dates-text, .dates-date {
+        text-align: center;
     }
+}
 
-    .dates-md {
-        display: none;
-    }
-
-    .dates-sm {
-        display: inline;
-    }
+.dates {
+    width: auto;
+    max-width: 800px;
+    margin: 0px auto;
 }
 
 .btn {
